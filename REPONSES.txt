@@ -1,0 +1,10 @@
+LAKHDHAR Amira
+1.4 : Maven 3.3.9
+1.5: groupId identifie de manière unique mon projet dans tous les projets.
+     artifactId est le nom du fichier jar sans version.
+1.6: target contient les différentes classes de mon projet.
+1.7: /td00/src/main/java/fr/dauphine/ja/lakhdharamira/td00/App.java
+1.8 : classpat est le chemin vers la classe à compiler et executer
+1.13 : la propriete target doit avoir la même version que java 
+       et sert à rendre les classes compilées compatibles avec JVM 1.8
+2.1 : aucun attribut manifest principal dans target/td00-1.0-SNAPSHOT.jar
