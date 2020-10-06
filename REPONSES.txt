@@ -8,3 +8,4 @@ LAKHDHAR Amira
 1.13 : la propriete target doit avoir la même version que java 
        et sert à rendre les classes compilées compatibles avec JVM 1.8
 2.1 : aucun attribut manifest principal dans target/td00-1.0-SNAPSHOT.jar
+Modification
