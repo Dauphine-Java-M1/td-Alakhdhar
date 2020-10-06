@@ -47,7 +47,7 @@ public class PrimeCollection
     public static void main(String[] args )
     {
         PrimeCollection koko = new PrimeCollection();
-        koko.initRandom(100,1000);
+        koko.initRandom(100,2000);
         koko.printPrimes();
     }
 }
