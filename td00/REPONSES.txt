@@ -1,0 +1,27 @@
+LAKHDHAR Amira
+TD Maven
+1.4 : Maven 3.3.9
+1.5: groupId identifie de manière unique mon projet dans tous les projets.
+     artifactId est le nom du fichier jar sans version.
+1.6: target contient les différentes classes de mon projet.
+1.7: /td00/src/main/java/fr/dauphine/ja/lakhdharamira/td00/App.java
+1.8 : classpat est le chemin vers la classe à compiler et executer
+1.13 : la propriete target doit avoir la même version que java 
+       et sert à rendre les classes compilées compatibles avec JVM 1.8
+2.1 : aucun attribut manifest principal dans target/td00-1.0-SNAPSHOT.jar
+
+TD GIT
+1.5. la différence est affichée en couleur sur le terminal
+1.8 : l'id SHA-1 est f43cdbcfddee305f3354facf28726f9b9e81ea2a
+2.3 : gitk met les deux branches master et remotes/origin/master en parallèle en vert
+2.5 : Résultat :
+     	! [rejected]        master -> master (fetch first)
+     	error: impossible de pousser des références vers 'https://github.com/Dauphine-Java-M1/td-Alakhdhar.git'
+	astuce: Les mises à jour ont été rejetées car la branche distante contient du travail que
+	astuce: vous n'avez pas en local. Ceci est généralement causé par un autre dépôt poussé
+	astuce: vers la même référence. Vous pourriez intégrer d'abord les changements distants
+	astuce: (par exemple 'git pull ...') avant de pousser à nouveau.
+	astuce: Voir la 'Note à propos des avances rapides' dans 'git push --help' pour plus d'information.
+2.6 : le commit sur javaavance n'a pas été effectué ! forcer le pull va nous faire perdre la dernière version commited unpushed de REPONSES.txt
+2.7 : c'est exactement ce que j'ai fait, l'erreur est donc expliqué en 2.6
+
