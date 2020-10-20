@@ -1,3 +1,32 @@
 LAKHDHAR Amira
 TD AMIA
+1.1 La fonction main est définie dans la classe Point, elle a donc accès aux champs privés.
+1.2 On ne peut accéder des entités privés de la classe Point à partir de TestPoint. Il nous faut des accesseurs.
+1.3 Les champs d'une classe doivent être privés pour restreindre la modification des ces champs et ne permettre leur modifications d'une autre classe qu'en rajoutant des accesseurs.
+1.4 Un accesseur permet de récupérer et modifier des champs privés d'une classe. Oui.
+1.5 Problème : le compilateur de TestPoint ne reconnait pas p.x et p.y 
+1.6 Tout focntionne bien.
+1.7 On créé une variable static dans Point qui s'incrémente à chaque appel au constructeur de Point 
+1.8 Le nombre et type des arguments du constructeur appelé indique au compilateur quel constructeur appeler. 
+
+2.1 Le code affiche : true pour le premier test puisqu'il compare les deux adresse memoire des
+        objets p1 et p2, tandis que la deuxième comparaison est fausse car p3 ne pointe pas vers
+        la même adresse que celle de p1, p3 a sa propre adresse mémoire
+2.3 : Le compilateur affiche 0 comme indice de p2 dans la liste. En effet, list.add(p1) rajoute l'adresse mémoire de l'objet p1 et donc celle de p2 (la même ). L'indice de p1 et le même que p2 c_a_d 0.
+      p3 quant à lui n'est pas dans la liste, le résultat de indexOf est donc -1.
+      Je ne comprend pas où est le problème !
+
+3.2 : An IndexOutOfBoundException is thrown
+3.5 : NullPoniterException dans les deux cas car null n'est pas une adresse et ne peut être rajouté à une liste de Point
+3.6 : Voir la classe ModernBrokenLine.
+        -pointCapacity: infiny, on peut toujours rajouter des points à la ligne.
+        -nbPoints : return LinkedList.size()
+        -contains : return LinkedList.contains(Point p)
+4.1 : translate agit directement sur les coordonnées du point, ça ne retourne rien.
+4.5 : le centre de c et de c2 a été translaté de (+1,+1). Pour l'éviter il faut créer un nouveau point à la translation et le relier au cercle
+4.6 : Cette méthode ne stocke pas les nouvelles coordonnées du centre.
+    Je ne sais pas comment je peux rectifier cela.
+4.9 : La fonction est écrite dans TestPoint et est appelée dans la méthode main de la même classe, on peut donc la rendre static
+
+5.1 : Non car la surface par exemple n'est pas calculée de la même manière
 
