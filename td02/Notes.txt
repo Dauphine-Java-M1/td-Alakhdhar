@@ -1,0 +1,47 @@
+Ex1
+1 - Affichage :
+   42
+   42
+   24
+   24
+   24
+   24
+   Explication : L'appel de méthode sur objet de classe Mère fait appel au méthode définies dans la classe mère, un appel sur un objet fils à la classe mère ira appeler les méthodes de la classe mère si celles-ci ne sont pas redéfinies dans la classe fille et feront appel au redefinies dans le cas échaeant.
+   Les objets initialisé de manière Mere mereFille = new Fille(); sont considéré comme Fille fille = new Fille();
+2 - Il a accés à la méthode meth() définie dans Fille ainsi que les méthodes protected de la classe Mère. et si il est dans Main,l'accés au méthode de la classe Fille se fait en créant un objet de la classe Fille.
+3 - Une méthode statique ne peut accéder qu'aux membres statiques. Une méthode non statique peut accéder aux membres statiques et non statiques, car au moment où la méthode statique est appelée, la classe peut ne pas être instanciée.
+    Affichage : 42
+                42
+                24
+                42
+                42
+                42
+                Ce qui indique que les méthodes statistiques dans Fille font appel aux méthodes statiques dans Mère
+4 - Un champs est propre à l'instance, si un objet est instancié Mère, mere.meths donne la valeur du champs dans Mère, si un champs est instancié Fille, fille.meth retourne la valeur du champs dans fille.
+Ex2
+1 - error: cannot find symbol
+        void k() throws IOException {System.out.println("Mere_k");  }
+                        ^
+      symbol:   class IOException
+      location: class Mere
+---> No catch and try in the méthode to throw an exception
+
+ error: e() in Fille cannot override e() in Mere
+    private void e() {System.out.println("Fille_e");}
+                 ^
+  attempting to assign weaker access privileges; was protected
+Main1.java:39: error: h() in Fille cannot override h() in Mere
+    char h() {System.out.println("Fille_h"); return 'c';}
+         ^
+  return type char is not compatible with int
+Main1.java:40: error: i() in Fille cannot override i() in Mere
+    int i() {System.out.println("Fille_i"); return 3; }
+        ^
+  return type int is not compatible with void
+
+---> An override should have the same signature
+
+3 - La surcharge d’une méthode ou d’un constructeur permet de définir plusieurs fois une même méthode/constructeur avec des arguments différents.
+Une redefinitions est une definition différentes d'une méthode dans une sous classe sans changer la signature et les arguments de la méthode mère
+4- Les statics ne sont pas atteint dans une classe externe Main
+
